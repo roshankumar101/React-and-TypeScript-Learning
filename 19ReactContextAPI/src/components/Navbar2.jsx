@@ -1,0 +1,21 @@
+import React from 'react'
+import { useContext } from 'react'
+import { ThemeType } from '../context/ThemeContext'
+
+
+const Navbar2 = () => {
+
+    const [theme, setTheme] = useContext(ThemeType)
+
+  return (
+    <div className='nav2'>
+        <h4>Home</h4>
+        <h4>About</h4>
+        <h4>Service</h4>
+        <h4>Contact</h4>
+        <h4>{theme}</h4>
+    </div>
+  )
+}
+
+export default Navbar2
